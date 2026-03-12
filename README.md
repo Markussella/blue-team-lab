@@ -1,5 +1,10 @@
-# blue-team-lab
-[EN] SOC Automation Lab — Real-time threat detection with Suricata IDS, SIEM with Elasticsearch/Kibana, and automated incident response using n8n SOAR. Includes IP blocking, email &amp; Telegram alerting. [ES] Laboratorio SOC — Detección de amenazas con Suricata IDS, SIEM con Elasticsearch/Kibana y respuesta automática a incidentes con n8n SOAR.
+# 🛡️ SOC Automation Lab — SOAR with Suricata, Elasticsearch & n8n
+
+> **[ES]** Laboratorio de automatización SOC con detección de amenazas en tiempo real, respuesta automática a incidentes y notificaciones multicanal.  
+> **[EN]** SOC automation lab featuring real-time threat detection, automated incident response, and multi-channel alerting.
+
+---
+
 ## 📋 Table of Contents / Índice
 - [Overview / Descripción](#-overview--descripción)
 - [Architecture / Arquitectura](#-architecture--arquitectura)
@@ -106,19 +111,25 @@ Laboratorio SOC funcional desplegado en una VM Kali Linux. El sistema monitoriza
 ```
 
 ### n8n Workflow / Flujo n8n
+![n8n Workflow](screenshots/n8n-workflow.png)
 
-![n8n Workflow](#) <!-- Add screenshot -->
+### Suricata Watcher — Terminal Output
+![Watcher Terminal](screenshots/watcher-terminal.png)
 
-### Telegram Alert Example / Ejemplo Alerta Telegram
+### Kibana — Alerts Dashboard
+![Kibana Alerts](screenshots/kibana-alerts.png)
 
-```
-🚨 Alerta SOAR
-Regla: GPL ATTACK_RESPONSE id check returned root
-Severidad: high
-IP Origen: 52.222.132.64
-IP Destino: 192.168.1.134
-Timestamp: 2026-03-12T12:05:37Z
-```
+### Telegram Alert / Alerta Telegram
+![Telegram Alert](screenshots/telegram-alert.png)
+
+### Email Notification / Notificación Email
+![Email Mailtrap](screenshots/email-mailtrap.png)
+
+### Firewall — Blocked IPs / IPs Bloqueadas
+![Firewall Blocked](screenshots/firewall-blocked.png)
+
+### Elasticsearch — Incidents / Incidentes
+![Elastic Incidents](screenshots/elastic-incidents.png)
 
 ---
 
@@ -210,13 +221,16 @@ soar-low-severity     # Low severity events
 ## 📁 Repository Structure / Estructura del Repositorio
 
 ```
-soar-lab/
+blue-team-lab/
 ├── firewall_api_mock.py    # Flask mock firewall API
 ├── suricata_watcher.py     # Elasticsearch alert poller
 ├── screenshots/            # Portfolio screenshots
 │   ├── n8n-workflow.png
+│   ├── watcher-terminal.png
 │   ├── kibana-alerts.png
 │   ├── telegram-alert.png
+│   ├── email-mailtrap.png
+│   ├── firewall-blocked.png
 │   └── elastic-incidents.png
 └── README.md
 ```
