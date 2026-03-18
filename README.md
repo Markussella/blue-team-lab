@@ -229,7 +229,13 @@ blue-team-lab/
 │   └── elastic-incidents.png
 └── README.md
 ```
+## 📖 Complete Setup Guide / Guía Completa
 
+A full step-by-step guide (19 pages) to build this lab from scratch,
+including troubleshooting and startup commands.
+
+📥 [Download EN Guide](SOC-Automation-Lab-Setup-Guide-EN.pdf)
+📥 [Descargar Guía ES](Laboratorio-SOC-Guia-Instalacion-ES.pdf)
 ---
 
 ## 👤 Author / Autor
