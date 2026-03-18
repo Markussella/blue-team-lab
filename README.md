@@ -109,28 +109,23 @@ Laboratorio SOC funcional desplegado en una VM Kali Linux. El sistema monitoriza
    │   └─► Send Telegram alert
    └─► [ELSE] Log to soar-low-severity index
 ```
-
 ### n8n Workflow / Flujo n8n
-![n8n Workflow](screenshots/n8n-workflow.png)
+![n8n Workflow](screenshots/flujon8n%20Workflow)
 
 ### Suricata Watcher — Terminal Output
-![Watcher Terminal](screenshots/watcher-terminal.png)
+![Watcher Terminal](screenshots/wacher.py.jpg)
 
 ### Kibana — Alerts Dashboard
-![Kibana Alerts](screenshots/kibana-alerts.png)
+![Kibana Alerts](screenshots/Kibana_alert.jpg)
 
 ### Telegram Alert / Alerta Telegram
-![Telegram Alert](screenshots/telegram-alert.png)
+![Telegram Alert](screenshots/Telegram_bot.png)
 
 ### Email Notification / Notificación Email
-![Email Mailtrap](screenshots/email-mailtrap.png)
+![Email Mailtrap](screenshots/mail_mailtrap.png)
 
 ### Firewall — Blocked IPs / IPs Bloqueadas
-![Firewall Blocked](screenshots/firewall-blocked.png)
-
-### Elasticsearch — Incidents / Incidentes
-![Elastic Incidents](screenshots/elastic-incidents.png)
-
+![Firewall Blocked](screenshots/bloqueo_de_firewall_Mock.png) 
 ---
 
 ## 🚀 Setup / Instalación
